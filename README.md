@@ -4,6 +4,9 @@ The Extension For Icons Cheat Sheet.
 Easy To Use. Just Open The Side Bar, Search Icons You Want To Copy.
 Just Click And Paste In Your Editor And Boom!!
 
+![Farmers Market Finder Demo](demo.gif)
+
+
 ## Features ✅
 
 - FontAwesome V6 Free
