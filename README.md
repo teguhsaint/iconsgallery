@@ -6,7 +6,6 @@ Just Click And Paste In Your Editor And Boom!!
 
 ![Farmers Market Finder Demo](https://raw.githubusercontent.com/teguhsaint/iconsgallery/main/demo.gif)
 
-
 ## Features ✅
 
 - FontAwesome V6 Free
@@ -14,7 +13,6 @@ Just Click And Paste In Your Editor And Boom!!
 - Bootstrap Icons
 - Icon search box to find icons by name or keyword.
 - More Icons Will Be Added Soon
-
 
 ## Installation
 
@@ -29,11 +27,9 @@ Just Click And Paste In Your Editor And Boom!!
 With click link bellow
 https://marketplace.visualstudio.com/items?itemName=CodeSaint.iconsgallery
 
-
 # Like What You See ?
 
 <a href="https://www.buymeacoffee.com/codesaint" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="189px" height="50px" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
 
 ## Authors
 
@@ -53,4 +49,3 @@ https://marketplace.visualstudio.com/items?itemName=CodeSaint.iconsgallery
 - [Septian Kapten](https://github.com/)
 - [Riyan Ribek](https://github.com/)
 - [Sevi Go](https://github.com/)
-
