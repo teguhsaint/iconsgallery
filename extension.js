@@ -22,22 +22,22 @@ class IconGalleryProvider {
       if (message.kategori == "fas") {
         element = `<i class="${message.data}"></i>`;
         vscode.env.clipboard.writeText(element);
-        vscode.window.showInformationMessage(`${message.data} copied!`);
+        vscode.window.setStatusBarMessage(`${message.data} copied!`, 2000);
       }
       if (message.kategori == "fab") {
         element = `<i class="${message.data}"></i>`;
         vscode.env.clipboard.writeText(element);
-        vscode.window.showInformationMessage(`${message.data} copied!`);
+        vscode.window.setStatusBarMessage(`${message.data} copied!`, 2000);
       }
       if (message.kategori == "feather") {
         element = `<i data-feather="${message.data2}"></i>`;
         vscode.env.clipboard.writeText(element);
-        vscode.window.showInformationMessage(`${message.data2} copied!`);
+        vscode.window.setStatusBarMessage(`${message.data2} copied!`, 2000);
       }
       if (message.kategori == "bi") {
         element = `<i class="${message.data}"></i>`;
         vscode.env.clipboard.writeText(element);
-        vscode.window.showInformationMessage(`${message.data} copied!`);
+        vscode.window.setStatusBarMessage(`${message.data} copied!`, 2000);
       }
     });
   }
@@ -124,6 +124,8 @@ function bi_call(){
       bi.forEach(ee => {
         $('#row').append('<div class="col-4 text-center" data-icon="'+ee+'" data-kategori="bi"><button data-kategori="bi" onclick="clickMe(this)" style="background-color:#ffffff04" class="py-3 btn btn-dark w-100 btn-sm"><i class="bi bi-'+ee+'" style="font-size:25px"></i><br><textaera class="mt-3 w-100" style="display:block;height:20px;width:100%;white-space: nowrap;overflow:hidden;font-size:10px">'+ee+'</textaera></button></div>')
       })
+      check_inputs()
+
     }
 </script>
 
@@ -133,7 +135,10 @@ function fth_call(){
     $('#row').append('<div class="col-4 text-center" data-icon="'+ee+'" data-kategori="feather"><button data-icon="'+ee+'" data-kategori="feather" onclick="clickMe(this)" style="background-color:#ffffff04" class="py-3 btn btn-dark w-100 btn-sm"><i data-feather="'+ee+'" style="font-size:25px"></i><br><textaera class="mt-3 w-100" style="display:block;height:20px;width:100%;white-space: nowrap;overflow:hidden;font-size:10px">'+ee+'</textaera></button></div>')
 
   })
+  
   feather.replace()
+  check_inputs()
+
 }
 </script>
 
@@ -146,8 +151,11 @@ function fth_call(){
       fabs.forEach(ee => {
         $('#row').append('<div class="col-4 text-center" data-icon="'+ee+'" data-kategori="fab"><button data-kategori="fab" onclick="clickMe(this)" style="background-color:#ffffff04" class="py-3 btn btn-dark w-100 btn-sm"><i class="fab '+ee+'" style="font-size:25px"></i><br><textaera class="mt-3 w-100" style="display:block;height:20px;width:100%;white-space: nowrap;overflow:hidden;font-size:10px">'+ee+'</textaera></button></div>')
       })
+        check_inputs()
+
   }
   fa_call()
+
   </script>
 
   <script>
@@ -160,7 +168,27 @@ function fth_call(){
       $(this).toggle($(this).filter('[data-icon*="' + searchTerm + '"], [data-icon*="' + searchTerm + '"]').length > 0);
     }
   });
-})
+  })
+  </script>
+
+
+  <script>
+ function check_inputs(){    
+
+    var searchTerm = $.trim($('#search').val());
+      console.log(searchTerm.length)
+    if(searchTerm.length>0){
+      $('.col-4').each(function() {
+        if (searchTerm.length < 1) {
+          $(this).show();
+        } else {
+          $(this).toggle($(this).filter('[data-icon*="' + searchTerm + '"], [data-icon*="' + searchTerm + '"]').length > 0);
+        }
+      });
+    }
+ }
+  
+  
   </script>
 
   <script>

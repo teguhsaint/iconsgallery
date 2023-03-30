@@ -1,73 +1,78 @@
 {
-	"name": "iconsgallery",
-	"displayName": "Icons Gallery",
-	"description": "The Gallery Of Icons, More icons will be update soon",
-	"version": "1.0.4",
-	"publisher": "CodeSaint",
-	"repository": {
-		"url": "https://github.com/iconsgallery.git"
-	},
-	"icon": "resources/icons/icon.png",
-	"engines": {
-		"vscode": "^1.74.0"
-	},
-	"categories": [
-		"Visualization",
-		"Other"
-	],
-	"activationEvents": [
-		"onView:iconsgallery-sidebar",
-		"onCommand:iconsgallery.start"
-	],
-	"main": "./extension.js",
-	"contributes": {
-		"viewsContainers": {
-			"activitybar": [
-				{
-					"id": "iconsgallery-sidebar",
-					"title": "Icons Gallery",
-					"icon": "resources/icons/icon_black.png"
-				}
-			]
-		},
-		"views": {
-			"iconsgallery-sidebar": [
-				{
-					"type": "webview",
-					"id": "iconsgallery-sidebar",
-					"name": "Icons Gallery",
-					"icon": "resources/icons/icon_black.png",
-					"contextualTitle": "Icons Gallery"
-				}
-			]
-		},
-		"commands": [
-			{
-				"command": "iconsgallery.start",
-				"title": "Open Icons Gallery"
-			}
-		]
-	},
-	"scripts": {
-		"lint": "eslint .",
-		"pretest": "npm run lint",
-		"test": "node ./test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/vscode": "^1.74.0",
-		"@types/glob": "^8.0.0",
-		"@types/mocha": "^10.0.1",
-		"@types/node": "16.x",
-		"eslint": "^8.28.0",
-		"glob": "^8.0.3",
-		"mocha": "^10.1.0",
-		"typescript": "^4.9.3",
-		"@vscode/test-electron": "^2.2.0"
-	},
-	"__metadata": {
-		"id": "e9a966cd-2a4c-40ec-bf4f-baaf8b0c3c03",
-		"publisherDisplayName": "Code Saint",
-		"publisherId": "aabae9aa-3a6b-4247-82d6-0799ebf2416c",
-		"isPreReleaseVersion": false
-	}
+  "name": "iconsgallery",
+  "displayName": "Icons Gallery",
+  "description": "The Gallery Of Icons, More icons will be update soon",
+  "version": "1.0.6",
+  "publisher": "CodeSaint",
+  "repository": {
+    "url": "https://github.com/teguhsaint/iconsgallery.git",
+    "type": "github"
+  },
+  "bugs": {
+    "url": "https://github.com/teguhsaint/iconsgallery/issues"
+    
+  },
+  "icon": "resources/icons/icon.png",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Visualization",
+    "Other"
+  ],
+  "activationEvents": [
+    "onView:iconsgallery-sidebar",
+    "onCommand:iconsgallery.start"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "iconsgallery-sidebar",
+          "title": "Icons Gallery",
+          "icon": "resources/icons/icon_black.png"
+        }
+      ]
+    },
+    "views": {
+      "iconsgallery-sidebar": [
+        {
+          "type": "webview",
+          "id": "iconsgallery-sidebar",
+          "name": "Icons Gallery",
+          "icon": "resources/icons/icon_black.png",
+          "contextualTitle": "Icons Gallery"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "iconsgallery.start",
+        "title": "Open Icons Gallery"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "eslint": "^8.28.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.3",
+    "@vscode/test-electron": "^2.2.0"
+  },
+  "__metadata": {
+    "id": "e9a966cd-2a4c-40ec-bf4f-baaf8b0c3c03",
+    "publisherDisplayName": "Code Saint",
+    "publisherId": "aabae9aa-3a6b-4247-82d6-0799ebf2416c",
+    "isPreReleaseVersion": false
+  }
 }

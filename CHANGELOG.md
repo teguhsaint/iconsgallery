@@ -1,8 +1,6 @@
 # Change Log
 
-All notable changes to the "iconsgallery" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+v1.0.6 - Fixed Search text not re-applied when changing icon collection
 
 ## [Unreleased]
 
